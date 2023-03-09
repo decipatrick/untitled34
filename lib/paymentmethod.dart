@@ -60,26 +60,87 @@ class _paymentmethodState extends State<paymentmethod> {
               ),
               ),
             ),
-            Container(
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Column(children: [
 
-
-              width: double.maxFinite,
-              decoration: BoxDecoration(
-                color: Colors.white,
-
-                borderRadius: BorderRadius.circular(30),
-
-
+                    Image.asset("lib/images/paypal.png",
+                    width: 150,
+                    height: 70,),
+                ],
               ),
-              child: Padding(
+                    ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Column(children: [
 
-                padding: const EdgeInsets.all(150.0),
-                child: Image.asset("lib/images/paypal.png",
-                width: 30,
-                  height: 40,
+                  Image.asset("lib/images/visa.png",
+                    width: 150,
+                    height: 70,),
+                ],
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Container(
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Column(children: [
+
+                  Image.asset("lib/images/pay.png",
+                    width: 150,
+                    height: 70,),
+                ],
+                ),
+              ),
+            ),
+            SizedBox(height: 200,),
+            GestureDetector(
+              onTap: () =>
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context){
+                    return const profilephoto();
+
+                  })),
+              child:  Container(
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(10),
+
+                ),
+
+
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Text("Next",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold
+                    ),
+                  ),
+                ),
+              ),
+
+            ),
+            
 
 
 

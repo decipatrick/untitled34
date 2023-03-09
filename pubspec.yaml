@@ -69,6 +69,13 @@ flutter:
     - lib/images/google.png
     - lib/images/facebook.png
     - lib/images/paypal.png
+    - lib/images/visa.png
+    - lib/images/pay.png
+    - lib/images/camera.png
+    - lib/images/galerry.png
+    - lib/images/photo1.png
+    - lib/images/logo12.png
+    - lib/images/stration.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
